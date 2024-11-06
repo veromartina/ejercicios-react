@@ -1,18 +1,12 @@
-import './App.css'
-import CountJS from './components/CountJS'
-import CountReact from './components/CountReact.jsx'
-import Title from './components/Title.jsx'
 
-function App() {
+import Login from './components/Login'; // Asegúrate de que la ruta sea correcta
 
+const App = () => {
   return (
-      <div>
-      <CountReact />
-      <CountJS />
-      <Title />
-      </div>
-     
-  )
-}
+    <div >
+      <Login />
+    </div>
+  );
+};
 
-export default App
+export default App;
