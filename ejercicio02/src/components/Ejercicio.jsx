@@ -3,7 +3,7 @@ import { useState } from "react";
 // Crear un formulario con un input y renderizar el valor
 export const Ejercicio = () => {
   const [password, setPassword] = useState("");
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false); //show("mostrar")
 
   const handlePass = (e) => {
     setPassword(e.target.value);
@@ -19,7 +19,7 @@ export const Ejercicio = () => {
           console.log({ "tu contraseña es :": { password } }); // se devuelve el console.log en objeto solo para vista
         }}
       >
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Password</label> {/*uso el htmlFor para cuando hago click en el label(password) el cursor se posicione en el input que corresponde */}
         <input
         //   type="password"
          type={show?"text":"password"}

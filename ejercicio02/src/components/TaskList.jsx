@@ -10,16 +10,16 @@ export const TaskList = () => {
 
   const addTask = (e) => {
     e.preventDefault();
-    if(task.trim()){
-    setTaskList([...taskList, task]);
-    setTask("");
+    if(task.trim()){  {/* valida si esta vacio o no. si esta vacio el input no agrega nada */}
+    setTaskList([...taskList, task]);  //uso opereitor "..." para que me agrege una tarea a mi array y que no la borre. cada vez que hago click que me haga una copia de lo que tengo en mi array y que me agrgue la tarea nueva. 
+    setTask("");  //me limpia el imput
 }
   };
 
   return (
     <div>
       <h1>Lista de tareas</h1>
-      <form onSubmit={addTask}>
+      <form onSubmit={addTask}>   {/*con onSubmit puedo usar enter en lugar del click en el boton*/}
         <label htmlFor="task">Tarea</label>
         <input
           type="text"
