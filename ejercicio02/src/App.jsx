@@ -1,5 +1,5 @@
 
-import Login from './Login'; // Asegúrate de que la ruta sea correcta
+import Login from './components/Login'; // Asegúrate de que la ruta sea correcta
 
 const App = () => {
   return (

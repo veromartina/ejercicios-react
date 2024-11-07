@@ -15,15 +15,18 @@ const Login = () => {
       setUsuario("");  //limpio los input
       setPassword("");
       alert("¡Inicio de sesión exitoso!");
+   
 
       // Aquí iría la redirección a otra página
     } else {
       setError("Credenciales incorrectas");
       setUsuario("");
-      setPassword("");
+  
+ 
     }
   };
-  console.log(usuario)
+  console.log(usuario, password);
+
   return (
     <div className="login-container">
       <h2>Iniciar sesión</h2>
